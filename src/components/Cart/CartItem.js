@@ -1,5 +1,5 @@
 import React from 'react';
-import twitter from '../../twitter.png'; 
+import trash from '../../trash.png'; 
 
 export default function CartItem ({item,value}){
     const {id,title,img,price,total,count} = item;
@@ -40,7 +40,7 @@ export default function CartItem ({item,value}){
             <div className="col-10 mx-auto col-lg-2">
                 <div className="cart-icon" onClick={()=>removeItem(id)}>
                        <span className="mr-2">
-                             <img src={twitter}  style={{width:"3rem",height:"3rem" , marginLeft :"1rem"}} ></img>
+                             <img src={trash}  style={{width:"2rem",height:"2rem" , marginLeft :"1rem"}} ></img>
                        </span>
                 </div>
                
